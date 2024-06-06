@@ -1,158 +1,173 @@
-# DEEPWAY V2
-Autonomous navigation for blind people.
-This project is version 2 of [deepWay](https://github.com/satinder147/DeepWay). You can have a look at this [video](https://www.youtube.com/watch?v=qkmU8mN0LwE)
-<img src="readMe/cover.png" height=500  hspace=20px vspace=200px/>
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DEEPWAY V2</font></font></h1><a id="user-content-deepway-v2" class="anchor" aria-label="永久链接：DEEPWAY V2" href="#deepway-v2"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">盲人自主导航。这个项目是</font></font><a href="https://github.com/satinder147/DeepWay"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">deepWay</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的第二个版本。你可以看看这个</font></font><a href="https://www.youtube.com/watch?v=qkmU8mN0LwE" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视频</font></font></a>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/cover.png"><img src="/satinder147/DeepWay.v2/raw/master/readMe/cover.png" height="500" hspace="20px" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在继续之前，请先查看版本 2 的演示</font></font></h1><a id="user-content-before-proceeding-look-at-demo-of-version2-at" class="anchor" aria-label="永久链接：在继续之前，请先查看版本 2 的演示" href="#before-proceeding-look-at-demo-of-version2-at"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://youtu.be/3aPsFYoD9pA" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DeepWay v.2</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可能想到的一个问题</font></font></h1><a id="user-content-a-question-you-may-have-in-mind" class="anchor" aria-label="永久链接：您可能想到的一个问题" href="#a-question-you-may-have-in-mind"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果我已经有一个存储库，为什么还要创建另一个？</font></font></h4><a id="user-content-if-i-already-had-a-repository-why-make-another-" class="anchor" aria-label="永久链接：如果我已经有了一个存储库，为什么还要再创建另一个？" href="#if-i-already-had-a-repository-why-make-another-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由于 V1 基于 keras，而我不太喜欢 tensorflow，因此为了更好地控制，我已转向 pytorch。它是完全重新设计的。</font></font></p>
+</blockquote>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它比其他的更好在哪里：</font></font></h1><a id="user-content-how-is-it-better-than-others" class="anchor" aria-label="永久链接：它比其他的更好在哪里：" href="#how-is-it-better-than-others"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">成本效益：我完成整个项目的花费不到</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10,000 卢比</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，即不到</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">200 美元</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">盲人通常其他感官发育良好，例如听力。使用耳机剥夺他们的一种感官并不是一件好事，因此我使用触觉反馈为盲人提供信息。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一切都在边缘设备上运行——Nvidiai Jetson Nano。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">硬件要求</font></font></h1><a id="user-content-hardware-requirements" class="anchor" aria-label="永久链接：硬件要求" href="#hardware-requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nvidia Jetson Nano。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arduino 纳米。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2个伺服电机。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USB 音频适配器（因为 jetson nano 没有音频插孔）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以太网电缆</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络摄像头</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适用于 nvidia jetson nano 的电源适配器</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3D打印机。（非必需）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一台笔记本电脑（最好是 Nvidia GPU）或任何云服务提供商。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">软件要求（如果在笔记本电脑上运行）</font></font></h1><a id="user-content-software-requirementsif-running-on-laptop" class="anchor" aria-label="永久链接：软件要求（如果在笔记本电脑上运行）" href="#software-requirementsif-running-on-laptop"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ubuntu 机器（最好是 16.04）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 anaconda。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装所需的依赖项。某些库（如 pytorch、opencv）需要额外注意。</font></font><br></li>
+</ol>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">conda env create -f deepWay.yml</font></font></p>
+</blockquote>
+<ol start="4" dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您无法克隆存储库。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据您的系统更改 arduno.py 文件中的 COM 号码。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 Ardunio nano 和 USB 音频适配器连接到您的 PC。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 CAM 更改为视频路径而不是 0，以便在视频上运行系统。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 arduino nano 中编译并运行 arduino Nano 代码。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行 blindrunner.py</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">软件要求（Jetson nano）</font></font></h1><a id="user-content-software-requirementsjetson-nano" class="anchor" aria-label="永久链接：软件要求（Jetson nano）" href="#software-requirementsjetson-nano"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按照</font></font><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">说明启动 Jetson nano。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于将无头设备与 Jetson Nano 连接（使用以太网电缆）。</font></font><br></li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>ifconfig
+Check inet addresss
+nmap -sn inet_address/24 --&gt; will return live ip address.
+ssh machine_name@ip
+Enter password
+Now you can connect switch on desktop sharing
+Now connect to jetson using Reminna.
 
-# Before proceeding look at demo of version2 at
-[DeepWay v.2](https://youtu.be/3aPsFYoD9pA)
-# A question you may have in mind
-#### If I already had a repository, why make another ?
-> Since V1 was based on keras, and I don't like tensorflow much, so for more controll I have shifted to pytorch.
-> It is complete redesign.
-
-
-# How is it better than others:
-1. Cost effective: I made the entire project in less than **RS 10000** which less than **$200**.
-2. Blind people generally develop other senses like hearing very well. Taking away one of their senses by using earphones   would not have been nice so I am providing information to the blind person using haptic feedback.
-3. Everything runs on a edge device--> Nvidiai Jetson Nano.
-
-# Hardware requirements
-1. Nvidia Jetson Nano.
-2. Arduino nano.
-3. 2 servo motors.
-4. USB audio adapter(as jetson nano does not have a audio jack)
-5. Ethernet cable
-6. Webcamera
-7. Power adapter for nvidia jetson nano
-8. 3D printer.(Not necessary)
-9. A latop(Nvidia GPU preferred) or any cloud service provider.
-
-# Software requirements(If running on Laptop)
-1. Ubuntu machine(16.04 preferred).
-2. Install anaconda.
-3. Install the required dependencies. Some libraries like pytorch, opencv would require a little extra attention.<br>
-> conda env create -f deepWay.yml
-4. You can not clone the repository.
-5. Change the COM number in the arduno.py file according to your system.
-6. Connect the Ardunio nano and USB audio adapter to your PC. 
-7. Change CAM to video path instead of 0 for running the system on video.
-8. Compile and run arduino Nano code in the arduino nano.
-9. Run blindrunner.py
-
-# Software Requirements(Jetson nano)
-1. Follow [these](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) instructions for starting up with Jetson nano.
-2. For connecting headless with jetson nano(using ethernet cable). <br>
-```
-ifconfig
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="ifconfig
 Check inet addresss
 nmap -sn inet_address/24 --> will return live ip address.
 ssh machine_name@ip
 Enter password
 Now you can connect switch on desktop sharing
 Now connect to jetson using Reminna.
-
-```
-3. Now install all the required dependicies(it is a time comsuming task, don't loose hope).
-
-### 1. Collecting dataSet and Generating image masks.
-I made videos of roads and converted those videos to jpg's. This way I collected a dataSet of approximately 10000 images.I collected images from left, right and center view(So automatically labelled). e.g:<br>
-<img src="readMe/left.jpg" height=150  hspace=20px vspace=200px/>
-<img src="readMe/center.jpg" height=150 hspace=20px vspace=20px/>
-<img src="readMe/right.jpg" height=150 hspace=20px vspace=20px/><br>  
-    
-For Unet, I had to create binary masks for the input data, I used LabelBox for generating binary masks. (This took a looooooooot of time). A sample is as follows-><br> 
-<img src="readMe/12.jpg" height=170 hspace=20px vspace=20px/>
-<img src="readMe/12_mask.jpg" height=170 hspace=20px vspace=20px/><br>  
-
-**For downloading the labelled data from Labelbox, I have made a small utility named "downloader.py"**
-   
-### 2. Model training
-I trained a lane detection model which would predict the lane(left,center,right) I am walking in.
-The loss vs iteration curve is as follows:
-<img src="readMe/lane.svg" height=400px/>
-
-I trained a U-Net based model for road segmentation on Azure.
-The loss(pink:traning, green:validation) vs iterations curve is as follows.<br>
-<img src="readMe/unet.svg" height=400px/>
+" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<ol start="3" dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在安装所有必需的依赖项（这是一项耗时的任务，不要失去希望）。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. 收集数据集并生成图像蒙版。</font></font></h3><a id="user-content-1-collecting-dataset-and-generating-image-masks" class="anchor" aria-label="永久链接：1.收集数据集并生成图像蒙版。" href="#1-collecting-dataset-and-generating-image-masks"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我制作了道路视频，并将这些视频转换为 jpg。这样，我收集了大约 10000 张图像的数据集。我从左、右和中心视图收集了图像（因此自动标记）。例如：</font></font><br>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/left.jpg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/left.jpg" height="150" hspace="20px" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/center.jpg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/center.jpg" height="150" hspace="20px" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/right.jpg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/right.jpg" height="150" hspace="20px" style="max-width: 100%;"></a><br></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 Unet，我必须为输入数据创建二进制掩码，我使用 LabelBox 来生成二进制掩码。（这花费了大量时间）。示例如下-&gt;</font></font><br>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/12.jpg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/12.jpg" height="170" hspace="20px" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/12_mask.jpg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/12_mask.jpg" height="170" hspace="20px" style="max-width: 100%;"></a><br></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了从 Labelbox 下载标签数据，我制作了一个名为“downloader.py”的小实用程序</font></font></strong></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2.模型训练</font></font></h3><a id="user-content-2-model-training" class="anchor" aria-label="永久链接：2. 模型训练" href="#2-model-training"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我训练了一个车道检测模型，它可以预测我所走的车道（左，中，右）。损失与迭代曲线如下：
+</font></font><a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/lane.svg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/lane.svg" height="400px/" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我在 Azure 上训练了一个基于 U-Net 的道路分割模型。损失（粉色：训练，绿色：验证）与迭代次数的关系曲线如下。</font><strong><font style="vertical-align: inherit;">虽然损失较小，但模型表现不佳。</font></strong><em><strong><font style="vertical-align: inherit;">我在 keras 中训练了一个具有不同架构的模型，表现非常好。损失与迭代次数的关系曲线为：</font></strong></em></font><br>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/unet.svg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/unet.svg" height="400px/" style="max-width: 100%;"></a>
 <br>
-**though the loss is less the model does not perform well**<br>
-***I trained a model in keras with a different architecture performs really well
-Loss vs iterations curve is:***
-<img src="readMe/keras_unet.png" height=400px/>
-
-### 3. 3D modelling and printing
-My friend Sangam Kumar Padhi helped me with CAD model. You can look at it [here](https://github.com/satinder147/DeepWay.v2/blob/master/3D%20model/model.STL)
-
-### 4. Electronics on the spectacles
-The electronics on the spectacles are very easy. It is just two servo motors connected with a ardunio nano. The arduino nano receives signal from the jetson(using pyserial library), and Arduino Nano controls the servo motors. <br>
-<img src="readMe/specs4.jpg" height=400 width=600 align="center" hspace=125px/>
-<img src="readMe/specs2.jpg" height=400 width=600 align="center"  hspace=125px/>
-<img src="readMe/specs3.jpg" height=400 width=600 align="center"  hspace=125px/>
-
-### 5. Pedestrian detection using Mobilenet V1 SSD
-I am using [Hao](https://github.com/qfgaohao/pytorch-ssd) repository for pedestrian detection .
-It runs at approx 10 FPS(individulaly) on the jetson nano and the accuracy is also pretty good.
-
-
-# Results
-1. Model for lane detection works really well, it runs at approx 25 fps on the jetson nano. I think it is the really good for an 30 FPS camera.
-2. The road segmentation model does not work as good as the lane detection one. Though the loss decreases very much but still the output is not as expected.[@ptrblck](https://discuss.pytorch.org/t/output-not-good-though-loss-is-very-less/69726/4) suggests to use focal loss or weighted loss.
-3. I trained another model using a different unet architecture in keras and it performs really well.
-4. I am doing naive approach for path planning right now. **Assumption**: Only people will be on the streets. 
-5. For pedestrian detection, I am using Mobilenet V1 SSD. Thanks to [Hao](https://github.com/qfgaohao). It runs at 5FPS. I tried to run object detection models in jetson-inference. If runs at approx 15 FPS, but I was not able to capture frames using opencv while gstreamer was also capturing frames.
-5. To cope up with the slow frame-rate of Mobilenet, I combined it with object tracking. Object detection ran once in 3 seconds to re seed the object-tracker.
-6. Overall the system runs at 3 FPS. I am running my nano at 5W with a usb type B power supply of 5V 2 Amp. Running the jetson in 10W mode using a 5V 4A supply would further improve performance.
-<img src="readMe/resultss.png" height=500  hspace=20px vspace=200px/>
-
-## The project is complete from my side, but there is other functionality I desire to add in future
-# TODO
-- [x] Collect training data.
-- [x] Train a lane detection model.
-- [x] Add servo motors feedback support.
-- [x] Add sound support.
-- [x] 3D print the spectacles.
-- [x] Train U-Net for doing a lot of other stuff(like path planing).
-- [x] Improve U-Net accuracy.(The loss is very low, but the model does not come up to my expectations)
-- [x] Drawing Lanes(Depends upon the improving unet accuracy)
-- [ ] Improving lane detection by taking averages of lane positions.
-- [x] Pedestrain Detection with tracking for more fps.
-- [ ] Improving speed of pedestrian detection by using tracking instead of detection.
-- [ ] Try to run optimized models on jetson(Available in jetson-inference)
-- [ ] Optimizing everything to run even faster on Jetson nano.(conversion of models into Tensorrt).
-- [ ] Adding G.P.S. support for better navigation.
-- [ ] Adding path planning.
-- [ ] Adding face recognition support(I have a [face_recognition](https://github.com/satinder147/Attendance-using-Face) repository, so most of the work is done, but I think face recognition should be added after we perfect the navigation part.)
-
-
-# People to Thank
-1. **Army Institute of Technology (My college).**
-2. **Prof. Avinash Patil,Sangam Kumar Padhi, Sahil and Priyanshu for 3D modelling and printing.**
-3. **Shivam sharma and Arpit for data labelling.**
-4. **Nvidia for providing a free jetson kit.**
-5. **LabelBox: For providing me with the free license of their **Amazing Prodcut**.**
-
-# References
-1. [Pytorch](https://pytorch.org/)
-2. [PyimageSearch](https://www.pyimagesearch.com/)
-3. [Pytorch Community--> special mention @ptrblck](https://discuss.pytorch.org/)
-4. [AWS](https://aws.amazon.com/)
-5. [U-Net](https://arxiv.org/pdf/1505.04597.pdf)
-6. [U-Net implementation(usuyama)](https://github.com/usuyama/pytorch-unet)
-7. [U-Net implementation(Heet Sankesara)](https://towardsdatascience.com/u-net-b229b32b4a71)
-8. [Hao pytorch-ssd](https://github.com/qfgaohao/pytorch-ssd)
-9. [Jetson-hacks](https://www.jetsonhacks.com/)
-10. [Tensorflow](https://www.tensorflow.org/)
-11. [Keras](https://keras.io/)
-12. [Advanced lane detection-Eddie Forson](https://towardsdatascience.com/teaching-cars-to-see-advanced-lane-detection-using-computer-vision-87a01de0424f)
-
-# Citations
-
-> Labelbox, "Labelbox," Online, 2019. [Online]. Available: https://labelbox.com
-
-# Liked it
-Tell me if you liked it by giving a star. Also check out my other repositories, I always make cool stuff. I even have a youtube channel "reactor science" where I post all my work.
-# Read about v1 at:
-1. [Geospatial Magazine](https://www.geospatialworld.net/blogs/now-visually-impaired-can-navigate-easily-with-deepway/)
-2. [Hackster](https://blog.hackster.io/navigation-glasses-gently-poke-you-in-the-right-direction-21acc16c8b14)
-3. [Anyline](https://anyline.com/news/3-inspiring-ai-projects-we-love/)
-4. [Arduino blog](https://blog.arduino.cc/2018/08/20/deepway-helps-the-visually-impaired-navigate-with-a-tap/)
+<strong><font style="vertical-align: inherit;"></font></strong><br>
+<em><strong><font style="vertical-align: inherit;"></font></strong></em>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/keras_unet.png"><img src="/satinder147/DeepWay.v2/raw/master/readMe/keras_unet.png" height="400px/" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. 3D 建模和打印</font></font></h3><a id="user-content-3-3d-modelling-and-printing" class="anchor" aria-label="永久链接：3. 3D 建模和打印" href="#3-3d-modelling-and-printing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://github.com/satinder147/DeepWay.v2/blob/master/3D%20model/model.STL"><font style="vertical-align: inherit;">我的朋友 Sangam Kumar Padhi 帮我制作了 CAD 模型。你可以在这里</font></a><font style="vertical-align: inherit;">查看</font></font><a href="https://github.com/satinder147/DeepWay.v2/blob/master/3D%20model/model.STL"><font style="vertical-align: inherit;"></font></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4. 眼镜上的电子设备</font></font></h3><a id="user-content-4-electronics-on-the-spectacles" class="anchor" aria-label="永久链接：4. 眼镜上的电子产品" href="#4-electronics-on-the-spectacles"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">眼镜上的电子元件非常简单。它只是两个与 ardunio nano 相连的伺服电机。arduino nano 接收来自 jetson 的信号（使用 pyserial 库），Arduino Nano 控制伺服电机。</font></font><br>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/specs4.jpg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/specs4.jpg" height="400" width="600" align="center" hspace="125px/" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/specs2.jpg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/specs2.jpg" height="400" width="600" align="center" hspace="125px/" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/specs3.jpg"><img src="/satinder147/DeepWay.v2/raw/master/readMe/specs3.jpg" height="400" width="600" align="center" hspace="125px/" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5. 使用 Mobilenet V1 SSD 进行行人检测</font></font></h3><a id="user-content-5-pedestrian-detection-using-mobilenet-v1-ssd" class="anchor" aria-label="永久链接：5. 使用 Mobilenet V1 SSD 进行行人检测" href="#5-pedestrian-detection-using-mobilenet-v1-ssd"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我正在使用</font></font><a href="https://github.com/qfgaohao/pytorch-ssd"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hao</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库进行行人检测。它在 jetson nano 上的运行速度约为 10 FPS（单独），准确度也相当不错。</font></font></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结果</font></font></h1><a id="user-content-results" class="anchor" aria-label="永久链接：结果" href="#results"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">车道检测模型效果非常好，在 Jetson Nano 上以大约 25 fps 的速度运行。我认为对于 30 FPS 的摄像头来说，这已经很不错了。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">道路分割模型不如车道检测模型好。虽然损失下降了很多，但输出仍然不如预期。</font></font><a href="https://discuss.pytorch.org/t/output-not-good-though-loss-is-very-less/69726/4" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@ptrblck</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建议使用焦点损失或加权损失。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我使用 keras 中不同的 unet 架构训练了另一个模型，其表现非常好。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我现在正在采用一种简单的方法进行路径规划。</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">假设</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：只有人会在街上。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于行人检测，我使用的是 Mobilenet V1 SSD。感谢</font></font><a href="https://github.com/qfgaohao"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hao</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。它以 5FPS 的速度运行。我尝试在 jetson-inference 中运行对象检测模型。它以大约 15 FPS 的速度运行，但我无法使用 opencv 捕获帧，而 gstreamer 也在捕获帧。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了应对 Mobilenet 较慢的帧率，我将其与对象跟踪相结合。对象检测每 3 秒运行一次，以重新播种对象跟踪器。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体而言，系统以 3 FPS 运行。我使用 5V 2 Amp 的 USB B 型电源以 5W 运行我的 nano。使用 5V 4A 电源以 10W 模式运行 jetson 将进一步提高性能。</font></font></li>
+</ol>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/satinder147/DeepWay.v2/blob/master/readMe/resultss.png"><img src="/satinder147/DeepWay.v2/raw/master/readMe/resultss.png" height="500" hspace="20px" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从我这边来看，项目已经完成，但我希望将来能添加其他功能</font></font></h2><a id="user-content-the-project-is-complete-from-my-side-but-there-is-other-functionality-i-desire-to-add-in-future" class="anchor" aria-label="永久链接：从我这边来看，项目已经完成，但我希望将来能添加其他功能" href="#the-project-is-complete-from-my-side-but-there-is-other-functionality-i-desire-to-add-in-future"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">去做</font></font></h1><a id="user-content-todo" class="anchor" aria-label="永久链接：TODO" href="#todo"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">收集训练数据。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">训练车道检测模型。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加伺服电机反馈支持。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加声音支持。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3D 打印眼镜。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">训练 U-Net 做很多其他的事情（比如路径规划）。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提高U-Net的准确率。（损失很低，但是模型没有达到我的期望）</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">绘制车道（取决于提高 unet 精度）</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过取车道位置的平均值来改进车道检测。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过跟踪进行行人检测，可以提高 fps。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过使用跟踪代替检测来提高行人检测的速度。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尝试在 jetson 上运行优化的模型（可在 jetson-inference 中使用）</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优化一切，使其在 Jetson nano 上运行得更快。（将模型转换为 Tensorrt）。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加 GPS 支持以实现更好的导航。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加路径规划。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加人脸识别支持（我有一个</font></font><a href="https://github.com/satinder147/Attendance-using-Face"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">face_recognition</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库，所以大部分工作已经完成，但我认为在我们完善导航部分后应该添加人脸识别。）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">值得感谢的人</font></font></h1><a id="user-content-people-to-thank" class="anchor" aria-label="永久链接：要感谢的人" href="#people-to-thank"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">陆军理工学院（我的大学）。</font></font></strong></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Avinash Patil 教授、Sangam Kumar Padhi、Sahil 和 Priyanshu 负责 3D 建模和打印。</font></font></strong></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shivam sharma 和 Arpit 负责数据标记。</font></font></strong></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nvidia 提供免费的 jetson 套件。</font></font></strong></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LabelBox：为我提供其 Amazing Prodcut 的免费许可。</font></font></strong></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参考</font></font></h1><a id="user-content-references" class="anchor" aria-label="永久链接：参考文献" href="#references"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><a href="https://pytorch.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pytorch</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PyimageSearch</font></font></a></li>
+<li><a href="https://discuss.pytorch.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pytorch 社区——&gt;特别提及@ptrblck</font></font></a></li>
+<li><a href="https://aws.amazon.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AWS</font></font></a></li>
+<li><a href="https://arxiv.org/pdf/1505.04597.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网</font></font></a></li>
+<li><a href="https://github.com/usuyama/pytorch-unet"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">U-Net 实现（usuyama）</font></font></a></li>
+<li><a href="https://towardsdatascience.com/u-net-b229b32b4a71" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">U-Net 实现（Heet Sankesara）</font></font></a></li>
+<li><a href="https://github.com/qfgaohao/pytorch-ssd"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">郝 pytorch-ssd</font></font></a></li>
+<li><a href="https://www.jetsonhacks.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jetson 黑客</font></font></a></li>
+<li><a href="https://www.tensorflow.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tensorflow</font></font></a></li>
+<li><a href="https://keras.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">喀拉拉</font></font></a></li>
+<li><a href="https://towardsdatascience.com/teaching-cars-to-see-advanced-lane-detection-using-computer-vision-87a01de0424f" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高级车道检测——Eddie Forson</font></font></a></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引用</font></font></h1><a id="user-content-citations" class="anchor" aria-label="永久链接：引用" href="#citations"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Labelbox，《Labelbox》，在线，2019 年。[在线]。网址：</font></font><a href="https://labelbox.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://labelbox.com</font></font></a></p>
+</blockquote>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">喜欢</font></font></h1><a id="user-content-liked-it" class="anchor" aria-label="永久链接：喜欢" href="#liked-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您喜欢，请给我一颗星。另外，请查看我的其他存储库，我总是制作很酷的东西。我甚至有一个 YouTube 频道“反应堆科学”，我会在那里发布我的所有作品。</font></font></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关 v1 的信息请阅读：</font></font></h1><a id="user-content-read-about-v1-at" class="anchor" aria-label="永久链接：了解有关 v1 的信息：" href="#read-about-v1-at"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><a href="https://www.geospatialworld.net/blogs/now-visually-impaired-can-navigate-easily-with-deepway/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地理空间杂志</font></font></a></li>
+<li><a href="https://blog.hackster.io/navigation-glasses-gently-poke-you-in-the-right-direction-21acc16c8b14" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">黑客</font></font></a></li>
+<li><a href="https://anyline.com/news/3-inspiring-ai-projects-we-love/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任意线</font></font></a></li>
+<li><a href="https://blog.arduino.cc/2018/08/20/deepway-helps-the-visually-impaired-navigate-with-a-tap/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arduino 博客</font></font></a></li>
+</ol>
+</article></div>
